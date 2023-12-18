@@ -22,7 +22,7 @@ const Home = () => {
                     key={index} 
                     src={pics} 
                     alt=""
-                    className="w-full h-screen object-cover "
+                    className="w-full h-[125VH] object-cover "
                     />
                     
                         

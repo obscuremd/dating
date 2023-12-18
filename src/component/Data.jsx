@@ -43,4 +43,29 @@ export const Comments = [
         name: 'Dashyn Dash',
         comment: "a beaut that prioritizes your pleasure over anything",
     },
+    {
+        image: 'https://imageio.forbes.com/specials-images/imageserve/6099a48187fe756a3e620703/Andy-Horning/960x0.jpg?format=jpg&width=960',
+        name: 'Derrick Johnson',
+        comment: "My  time with her was so nice I cant wait to be with you again",
+    },
+    {
+        image: 'hhttps://bostonglobe-prod.cdn.arcpublishing.com/resizer/GxjuxtQC-4lOx0fgdLxdsiJI-Oc=/960x0/filters:focal(209x219:219x209)/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/ID2MONZ7KVBRRJ2BWV4CPJ7U6Y.jpg',
+        name: 'Anderson Matthews',
+        comment: "I really didn't believe she was real until she met me",
+    },
+    {
+        image: 'https://wmfdp.com/wp-content/uploads/2019/07/Dante-J.-James-Porland-1.jpg',
+        name: 'Michael Stones',
+        comment: " I am saving money to be with you again, I love you babe you are the best",
+    },
+    {
+        image: 'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2015_42/1261876/damontweedy_alt4_stocksphotography.jpg',
+        name: 'Benson Davids',
+        comment: "You are so sexy and great. Please forgive me for my actions last time",
+    },
+    {
+        image: 'https://media.istockphoto.com/id/1149504274/photo/portrait-of-a-taiwanese-man.jpg?s=612x612&w=0&k=20&c=uiQDg8fKN1LCTCU-AxNosEagZAwt7mZdAqRqMLDatyI=',
+        name: 'Kim Un ',
+        comment: "You are a wonderful woman, thank you for giving me the time of my life pretty",
+    },
 ]

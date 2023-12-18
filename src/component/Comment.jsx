@@ -7,7 +7,7 @@ import { Cancel } from "@mui/icons-material"
 
 const Comment = () => {
   return (
-    <div className="bg-[#231F26] w-full h-screen flex flex-col items-center">
+    <div className="bg-[#231F26] w-full flex flex-col items-center">
         {Comments.map((comment, index)=>(
           <div key={index} className="flex flex-col gap-5 w-[95%] pt-5">
             <div className="flex gap-3">
