@@ -5,27 +5,18 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import { Carousel } from "@material-tailwind/react";
+
+import bitcoin from '../assets/bitcoin.svg'
+import cashapp from '../assets/cashapp.svg'
+import paypal from '../assets/paypal.svg'
+import zelle from '../assets/zelle.svg'
 
 const Home = () => {
 
-    const [activeIndex, setActiveIndex] = useState(0)
-    
-    const items = []
-
-    const updateIndex = (newIndex) => {
-        if (newIndex === 0) {
-            newIndex = 0
-        } else if (newIndex === Pic.length){
-            newIndex = Pic.length - 1
-        }
-
-        setActiveIndex(newIndex)
-    }
-
-
   return (
     <div className="w-full h-screen absolute">
-        <div className="flex" style={{transform : `translate(-${activeIndex * 100}%)`}}>
+        <Carousel>
             {Pic.map((pics, index)=>(
                 <img 
                     key={index} 
@@ -36,9 +27,9 @@ const Home = () => {
                     
                         
             ))}
-        </div>
+        </Carousel>
 
-        <div className="relative bottom-[20%] left-3">
+        <div className="relative bottom-[35%] left-3">
             <h3 className="text-3xl">MEIJAKAY (23)</h3>
             <div className="flex gap-2 text-base">
                 <CakeIcon/> 
@@ -48,26 +39,35 @@ const Home = () => {
                 <h1>♊</h1> 
                 <h1>Gemini</h1>
             </div>
+            <div className="flex flex-col gap-3 mt-3">
+                <p>payment method</p>
+                <div className="flex gap-5">
+                    <div className="flex flex-col justify-center items-center">
+                        <img src={paypal} alt=""  className="w-8"/>
+                        <p>paypal</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                        <img src={bitcoin} alt=""  className="w-8"/>
+                        <p>Bitcoin</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                        <img src={zelle} alt=""  className="w-8"/>
+                        <p>Zelle</p>
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                        <img src={cashapp} alt=""  className="w-8"/>
+                        <p>Cashapp</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <Link to='/comment'>
-            <div className="bg-gradient-to-br from-[#DC9170] to-[#EB7E7E] w-12 h-12 rounded-full relative bottom-[30%] left-[80%] flex justify-center items-center">
+            <div className="bg-gradient-to-br from-[#DC9170] to-[#EB7E7E] w-12 h-12 rounded-full relative bottom-[40%] left-[80%] flex justify-center items-center">
                 <CommentBankRounded/>
             </div>
         </Link>
 
-        <button 
-            onClick={()=>{updateIndex(activeIndex - 1)}}
-            className="absolute bottom-[50%] left-[2%]"
-        >
-            <ArrowCircleLeftIcon />
-        </button>
-        <button 
-            onClick={()=>{updateIndex(activeIndex + 1)}}
-            className="absolute bottom-[50%] left-[92%]"
-        >
-            <ArrowCircleRightIcon/> 
-        </button>
 
        
         
